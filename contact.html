@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   
+    body {
+        font-family: Arial, sans-serif;
+        text-align: left;
+    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+    }
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .footer{
+        text-align: left;
+    }
+</style>
+<body>
+    <header id="header"> 
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo_transparent.png" alt="Tech Academy Logo">
+            </a>
+            <nav class="main-nav" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                </ul>
+            </nav>
+        </div>
+    <h2 id=t1>Career-Ready IT Training in Nepal</h2>
+    </header>
+    <main class="cont">
+        <h3><mark>Contact Us</mark></h3>
+        <br>
+        <p>Email: <a href="info@techacademynepal.com">info@techacademynepal.com</a></p>
+        <p>Phone: <a href="#">+977-9848613800</a></p>
+        <p>Website: <a href="www.TechAcademyNP.com">www.TechAcademyNP.com</a></p>
+        <p>Address: New Baneshwor, Kathmandu, Nepal</p>
+    </main>
+        <p align="center"><mark>Please fill the form for any type of information. Our teams will be here for you.</mark></p>
+        <br>
+        <form id="contactForm">
+            <div class="field-group">
+                <label for="fname">Full Name</label>
+                <input type="text" name="fname" id="fname" value="">
+                <span class="error" id="nameError">Full name must contain at least one space.</span>
+            </div>
+        
+            <div class="field-group">
+                <label for="contact">Contact</label>
+                <input type="text" name="contact" id="contact" value="">
+                <span class="error" id="contactError">Only numbers are allowed.</span>
+            </div>
+        
+            <div class="field-group">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" value="">
+                <span class="error" id="emailError">Email must be a valid Gmail address.</span>
+            </div>
+        
+            <div class="field-group">
+                <label for="message">Message (Optional)</label>
+                <textarea rows="3" cols="30" id="message"></textarea>
+            </div>
+        
+            <button type="submit" name="submit">Submit</button>
+        </form>
+        
+        <br>
+        <script src="script.js"></script>
+        <footer class="footer">
+            <br>
+                <p><u>&copy; 2025 Tech Academy. All Rights Reserved.</u></p>
+                <br>
+                <a href="index.html" class="back-link">Back</a>
+        </footer>
+</body>
+</html>

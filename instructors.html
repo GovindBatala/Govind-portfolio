@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructors - Tech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .instructor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    padding: 100px;
+}
+.instructor {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px darkcyan;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instructor:hover {
+    transform: translateY(-5px);
+}
+.instructor img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.instructor img:hover {
+    transform: scale(1.05);
+}
+</style>
+<body>
+    <header id="header"> 
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo_transparent.png" alt="Tech Academy Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 id="t1">Career-Ready IT Training in Nepal</h2>
+    </header>
+    <main>
+        <h3><mark>Meet Our Instructors</mark></h3>
+        <br>
+        <div class="instructor-list">
+            <div class="instructor">
+                <img src="instructor1.jpg" alt="Govind Batala" class="instructor-img">
+                <h3>Govind Batala</h3>
+                <p>Expert in Java Programming</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor2.jpg" alt="Bishal Bista" class="instructor-img">
+                <h3>Bishal Bista</h3>
+                <p>Specialist in C++ and Competitive Coding</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor3.jpg" alt="Ayush Saud" class="instructor-img">
+                <h3>Ayush Saud</h3>
+                <p>C Programming and Systems Expert</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor4.jpg" alt="Daman Bist" class="instructor-img">
+                <h3>Daman Bist</h3>
+                <p>Senior Web Developer and UI/UX Designer</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor5.jpg" alt="Hitesh Rawal" class="instructor-img">
+                <h3>Hitesh Rawal</h3>
+                <p>Python and Data Science Instructor</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor6.jpg" alt="Aarav Batala" class="instructor-img">
+                <h3>Aarav Batala</h3>
+                <p>Master Graphic Design for branding, illustration, and digital art.</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor7.jpg" alt="Ajay Sharma" class="instructor-img">
+                <h3>Ajay Sharma</h3>
+                <p>Proficient in Kotlin for developing modern applications.</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor8.jpg" alt="Ranbir Kapoor" class="instructor-img">
+                <h3>Ranbir Kapoor</h3>
+                <p>Expert in data analysis, visualization, and automation using Excel.</p>
+            </div>
+            <div class="instructor">
+                <img src="instructor9.jpg" alt="Dayahang Rai" class="instructor-img">
+                <h3>Dayahang Rai</h3>
+                <p>Skilled in MySQL for database management and optimization.</p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p><u>&copy; 2025 Tech Academy. All Rights Reserved.</u></p>
+        <br>
+        <a href="index.html" class="back-link">Back</a>
+    </footer>
+</body>
+</html>
